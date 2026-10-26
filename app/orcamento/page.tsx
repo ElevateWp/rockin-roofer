@@ -9,9 +9,9 @@ import AnimateOnScroll from '@/components/motion/AnimateOnScroll';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Request a quote',
+  title: 'Get a quote',
   description:
-    'Contact Priceys Roof Painting to discuss your job and request a quote. Call +61 434 242 175.',
+    'Contact The Rockin’ Roofer LTD to discuss your job and request a quote. Call +44 7570 354661.',
   pathname: '/quote/',
 });
 
@@ -34,7 +34,7 @@ const BOOKING_STEPS = [
   {
     step: 4,
     title: 'Complete the agreed work',
-    description: 'Priceys Roof Painting completes the agreed painting work with care.',
+    description: 'The Rockin’ Roofer LTD completes agreed roofing work with care.',
   },
 ];
 
@@ -44,7 +44,7 @@ export default function BookAppointmentPage() {
       {/* SECTION 1: Appointment Introduction */}
       <section className="py-16 md:py-24 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Request a quote', path: '/quote/' }]} />
+          <Breadcrumbs items={[{ name: 'Get a quote', path: '/quote/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8 items-start">
             <div className="lg:col-span-8">
@@ -52,7 +52,7 @@ export default function BookAppointmentPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Roofing services
                 </span>
-                <WordRevealH1 text="Request a quote." />
+                <WordRevealH1 text="Get a quote." />
                 <div className="mt-8">
                   <ScrubbedParagraph text="Tell us what work you need. We will discuss availability and next steps." />
                 </div>
@@ -64,7 +64,7 @@ export default function BookAppointmentPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <span className="font-medium text-forest block">Call our team:</span>
                   <p className="text-forest-ink/70">
-                    Would you prefer to speak directly? We are open 24 hours. Call us any time.
+                    Need to talk to someone? Call Ben on +44 7570 354661 to discuss your job.
                   </p>
                   <a
                     href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}
@@ -88,10 +88,10 @@ export default function BookAppointmentPage() {
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <div>
                   <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                    Como funciona
+                    How it works
                   </span>
                   <h2 className="font-display text-26 md:text-33 text-forest-ink mb-4">
-                    Próximas etapas
+                    Next steps
                   </h2>
                   <p className="font-body text-15 text-forest-ink/80 leading-relaxed mb-6">
                     We discuss your plans and explain each step clearly.
@@ -160,7 +160,7 @@ export default function BookAppointmentPage() {
             {/* Opening hours */}
             <AnimateOnScroll animation="fade-up" delay={0.2}>
               <div className="p-8 bg-paper border border-mist h-full shadow-sm">
-                <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Horários</span>
+                <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Opening hours</span>
                 <h3 className="font-display text-21 text-forest-ink mb-4">Opening hours</h3>
                 <div className="space-y-1.5 font-body text-13 text-forest-ink/80">
                   {CLINIC_INFO.schedule.length > 0 ? CLINIC_INFO.schedule.map((item) => (
@@ -176,10 +176,10 @@ export default function BookAppointmentPage() {
             {/* Service area */}
             <AnimateOnScroll animation="fade-up" delay={0.3}>
               <div className="p-8 bg-paper border border-mist h-full shadow-sm">
-                <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Localização</span>
+                <span className="font-body text-13 text-forest block mb-2 font-medium uppercase tracking-wider">Location</span>
                 <h3 className="font-display text-21 text-forest-ink mb-4">Service area</h3>
                 <p className="font-body text-13 text-forest-ink/80 leading-relaxed mb-3">
-                  We serve Nelson Bay and surrounding areas. Contact us to confirm availability.
+                  We serve Belvedere and surrounding areas. Contact us to confirm availability.
                 </p>
               </div>
             </AnimateOnScroll>
@@ -189,3 +189,5 @@ export default function BookAppointmentPage() {
     </div>
   );
 }
+
+

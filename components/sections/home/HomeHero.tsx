@@ -49,7 +49,7 @@ export default function HomeHero() {
   return (
     <div
       data-slipstream-demo
-      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#DCDCDC] overflow-clip"
+      className="-mt-[88px] sm:-mt-[100px] md:-mt-[112px] relative w-full bg-white border-b border-[#E5DADD] overflow-clip"
       style={{
         width: "100%",
         containerType: "inline-size",
@@ -74,28 +74,28 @@ export default function HomeHero() {
           min-height:48px;
           padding:0 28px;
           gap:20px;
-          background:#222222;
-          border:1px solid #171717;
+          background:#791D2B;
+          border:1px solid #292326;
           border-radius:9999px;
           color:#FFFFFF;
           font-size:14px;
           font-weight:600;
           letter-spacing:0.01em;
-          box-shadow:0 6px 20px rgba(34,34,34,0.18);
+          box-shadow:0 6px 20px rgba(121,29,43,0.18);
           transition:all .2s ease;
         }
         [data-slipstream-demo] [data-gp-enter]:hover{
-          background:#555555;
-          box-shadow:0 8px 26px rgba(34,34,34,0.24);
+          background:#9B2B3B;
+          box-shadow:0 8px 26px rgba(121,29,43,0.24);
           transform:translateY(-1px);
         }
         [data-slipstream-demo] [data-gp-enter]:focus-visible{
-          outline:2px solid #171717;
+          outline:2px solid #292326;
           outline-offset:4px;
         }
         [data-slipstream-demo] [data-gp-touch-picker]{top:auto;bottom:18px;left:50%;}
         [data-slipstream-demo] [data-gp-select]{
-          border:1px solid #DCDCDC;
+          border:1px solid #E5DADD;
           border-radius:8px;
           font-size:12px;
           color:#FFFFFF;
@@ -103,10 +103,10 @@ export default function HomeHero() {
         }
         [data-ch-hero-header]{position:absolute;inset:clamp(24px,4.5cqw,48px) clamp(24px,5cqw,64px) auto;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#FFFFFF;}
         [data-ch-hero-brand]{font-size:19px;font-weight:700;letter-spacing:-.045em;}
-        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#666666;text-align:right;}
-        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#666666;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
-        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#666666;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
-        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#666666;font-size:11px;letter-spacing:.01em;}
+        [data-ch-hero-category]{font-size:12px;line-height:1.5;color:#71676A;text-align:right;}
+        [data-ch-hero-intro]{position:absolute;inset:auto 24px calc(100% - var(--gp-word-top,35%) + 32px);margin:0;max-width:none;text-align:center;color:#71676A;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;}
+        [data-ch-hero-support]{position:absolute;inset:calc(var(--gp-word-bottom,50%) + 32px) 24px auto;margin:0 auto;max-width:42ch;text-align:center;color:#71676A;font-size:16px;font-weight:400;line-height:1.5;text-wrap:balance;}
+        [data-sublime-scroll]{position:absolute;inset:auto 24px 7%;text-align:center;color:#71676A;font-size:11px;letter-spacing:.01em;}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:12%;}}
         @media(any-pointer:coarse){[data-sublime-scroll]{bottom:13%;}}
         @container(max-width:450px){
@@ -124,7 +124,7 @@ export default function HomeHero() {
         [data-slipstream-demo] [data-gp-content]{
           padding:6rem clamp(1.25rem,5cqw,5rem) 6.5rem;
           font-family:inherit;
-          background:#171717;
+          background:#351017;
           color:#FFFFFF;
         }
         [data-slipstream-demo] section,[data-slipstream-demo] [data-gp-caption]{font-family:inherit;}
@@ -139,7 +139,7 @@ export default function HomeHero() {
         [data-slipstream-copy] h2{
           max-width:48rem;
           margin:0;
-          color:#171717;
+          color:#FFFFFF;
           font-size:clamp(1.75rem,1.1rem + 2.1cqw,2.4rem);
           font-weight:700;
           line-height:1.2;
@@ -158,7 +158,7 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] h3{
           margin:0;
-          color:#171717;
+          color:#FFFFFF;
           font-size:1.125rem;
           font-weight:600;
           line-height:1.2;
@@ -166,14 +166,14 @@ export default function HomeHero() {
         }
         [data-slipstream-feature] p{
           margin:.55rem 0 0;
-          color:#DCDCDC;
+          color:#E5DADD;
           font-size:.9375rem;
           line-height:1.55;
         }
         [data-slipstream-no]{
           display:inline-block;
           margin-right:.7rem;
-          color:#222222;
+          color:#E8DADD;
           font:700 .8125rem ui-monospace,monospace;
           letter-spacing:.08em;
           transform:translateY(-.1em);
@@ -188,20 +188,20 @@ export default function HomeHero() {
 
       {face ? (
         <GlyphPortal
-          word="PRICEYS ROOF PAINTING"
+          word="Rockin Roofing"
           fontFamily={face}
           fontWeight={700}
           style={{
             fontFamily: face,
-            "--gp-paper": "#F5F5F5",
-            "--gp-ink": "#171717",
-            "--gp-field": "#171717",
-            "--gp-foreground": "#F5F5F5",
+            "--gp-paper": "#F8F5F5",
+            "--gp-ink": "#292326",
+            "--gp-field": "#292326",
+            "--gp-foreground": "#F8F5F5",
           }}
           scrollLength={2.2}
           interactive={true}
           annotations={false}
-          enterLabel="Discover Priceys Roof Painting"
+          enterLabel="Discover The Rockin’ Roofer LTD"
           underlay={
             <div
               className="absolute inset-0 overflow-hidden pointer-events-none"
@@ -244,7 +244,7 @@ export default function HomeHero() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(circle at 18% 12%, rgba(34,34,34,0.16), transparent 38%), radial-gradient(circle at 82% 22%, rgba(8,8,8,0.16), transparent 32%), linear-gradient(135deg, rgba(8,8,8,0.72) 0%, rgba(8,8,8,0.68) 50%, rgba(8,8,8,0.76) 100%)",
+                    "radial-gradient(circle at 18% 12%, rgba(121,29,43,0.16), transparent 38%), radial-gradient(circle at 82% 22%, rgba(53,16,23,0.16), transparent 32%), linear-gradient(135deg, rgba(53,16,23,0.72) 0%, rgba(53,16,23,0.68) 50%, rgba(53,16,23,0.76) 100%)",
                 }}
               />
             </div>
@@ -252,12 +252,12 @@ export default function HomeHero() {
           front={
             <>
               <div data-ch-hero-header>
-                <span data-ch-hero-brand>Priceys Roof Painting</span>
-                <span data-ch-hero-category>Nelson Bay · New South Wales<br />Nelson Bay and surrounding areas</span>
+                <span data-ch-hero-brand>The Rockin’ Roofer LTD</span>
+                <span data-ch-hero-category>Belvedere · United Kingdom<br />Belvedere and surrounding areas</span>
               </div>
-              <p data-ch-hero-intro>Roof restoration, painting and repairs in Nelson Bay, NSW.</p>
+              <p data-ch-hero-intro>Roof repairs, replacements and roofline work in Belvedere, UK.</p>
               <p data-ch-hero-support>
-                Roof restoration, painting and repairs in Nelson Bay, NSW.
+                Roof repairs, replacements and roofline work in Belvedere, UK.
               </p>
               <span data-sublime-scroll>Scroll to explore ↓</span>
             </>
@@ -265,55 +265,55 @@ export default function HomeHero() {
         >
           <div data-slipstream-copy>
             <h2>
-              Roof restoration and painting, completed with care.
+              Roof repairs and replacements, completed with care.
             </h2>
 
             <div data-slipstream-features>
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>01</span>
-                  Roof restoration and painting
+                  Roof repairs
                 </h3>
                 <p>
-                  Careful workmanship for roof restoration and painting.
+                  Professional roof repairs and replacements, with clear communication.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>02</span>
-                  Roof cleaning and maintenance
+                  Fascia, soffit and guttering
                 </h3>
                 <p>
-                  Ask about pressure cleaning, gutters and solar panels.
+                  Ask about fascia, soffits and gutter replacement.
                 </p>
               </div>
 
               <div data-slipstream-feature>
                 <h3>
                   <span data-slipstream-no>03</span>
-                  Roof painting and repairs
+                  Roof leak and tile repairs
                 </h3>
                 <p>
-                  Discuss your roof, preparation and finish with our team.
+                  Discuss the roof damage, leak or repair needed.
                 </p>
               </div>
             </div>
 
             <div className="flex flex-wrap items-center gap-4 pt-4">
               <Link
-                href="tel:+61434242175"
-                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#222222] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(34,34,34,0.18)] transition-all hover:bg-[#555555] hover:shadow-[0_8px_26px_rgba(34,34,34,0.24)]"
+                href="tel:+447570354661"
+                className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-[#791D2B] px-7 font-body text-sm font-semibold text-white shadow-[0_6px_20px_rgba(121,29,43,0.18)] transition-all hover:bg-[#9B2B3B] hover:shadow-[0_8px_26px_rgba(121,29,43,0.24)]"
               >
-                Call Priceys Roof Painting
+                Call The Rockin’ Roofer LTD
                 <ArrowRight size={16} />
               </Link>
               <a
-                href="tel:+61434242175"
+                href="tel:+447570354661"
                 className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 font-body text-sm font-semibold text-white transition-all hover:bg-white/20"
               >
-                <Phone size={15} className="text-[#555555]" />
-                Contact Priceys Roof Painting
+                <Phone size={15} className="text-[#9B2B3B]" />
+                Contact The Rockin’ Roofer LTD
               </a>
               <a
                 href="#home-stats"
@@ -332,7 +332,7 @@ export default function HomeHero() {
             height: "80vh",
             display: "grid",
             placeItems: "center",
-            color: "#171717",
+            color: "#292326",
             fontSize: 14,
             fontWeight: 500,
           }}
@@ -343,3 +343,11 @@ export default function HomeHero() {
     </div>
   );
 }
+
+
+
+
+
+
+
+

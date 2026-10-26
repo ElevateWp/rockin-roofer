@@ -15,14 +15,14 @@ export default function HomeFinalCTA() {
 
         <AnimateOnScroll animation="fade-up" duration={0.85} delay={0.15}>
           <p className="font-body text-17 md:text-21 text-paper/80 leading-relaxed max-w-xl mb-10 mx-auto">
-            Contact Priceys Roof Painting to discuss your project and availability.
+            Contact The Rockin’ Roofer LTD to discuss your project and availability.
           </p>
         </AnimateOnScroll>
 
         <AnimateOnScroll animation="zoom-in" duration={0.85} delay={0.3}>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <Button href="/quote/" variant="lime" size="lg">
-              Request a quote
+              Get a quote
             </Button>
             <Button
               href={`tel:${CLINIC_INFO.contact.phone.replace(/[^0-9+]/g, '')}`}

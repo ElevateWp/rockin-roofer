@@ -225,7 +225,7 @@ export function TiltedGridHero({
 
   const share = aspectRatio / SLICES;
   const duration = columns * speed;
-  const mask = `linear-gradient(90deg,transparent,#000 ${fade}%,#000 ${
+  const mask = `linear-gradient(90deg,transparent,#351017 ${fade}%,#351017 ${
     100 - fade
   }%,transparent)`;
 
@@ -327,5 +327,6 @@ export function TiltedGridHero({
 }
 
 export default TiltedGridHero;
+
 
 

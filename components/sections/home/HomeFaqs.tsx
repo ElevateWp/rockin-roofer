@@ -8,28 +8,28 @@ import { CLINIC_INFO } from '@/lib/clinic-data';
 const HOME_FAQS: AccordionItem[] = [
   {
     question: 'What roofing services do you provide?',
-    answer: 'Priceys Roof Painting provides roof painting, roof restoration and roof painting, tile repairs and repointing, and roof repairs.',
+    answer: 'The Rockin’ Roofer LTD provides roof repairs and replacements, tile repairs, re-pointing, lead flashing, fascia, soffit and guttering work.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
-    question: 'Does Priceys Roof Painting serve my area?',
-    answer: 'Priceys Roof Painting serves Nelson Bay and surrounding areas.',
-    relatedLink: { href: '/contato/', label: 'Contact our team →' },
+    question: 'Does The Rockin’ Roofer LTD serve my area?',
+    answer: 'The Rockin’ Roofer LTD serves Belvedere and surrounding areas.',
+    relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
   {
-    question: 'What painting and roof work do you do?',
-    answer: 'We restore and paint roofs, repair tiles, repoint, clean gutters and clean solar panels. Contact us to discuss your property.',
+    question: 'What roofing work do you do?',
+    answer: 'We repair roofs and tiles, investigate water ingress, replace roofs and work on flashing, re-pointing, fascia, soffits and gutters.',
     relatedLink: { href: '/services/', label: 'Explore our services →' },
   },
   {
     question: 'How do I request a quote?',
     answer: `Call ${CLINIC_INFO.contact.phone} or send an enquiry using the quote form.`,
-    relatedLink: { href: '/quote/', label: 'Request a quote →' },
+    relatedLink: { href: '/quote/', label: 'Get a quote →' },
   },
   {
     question: 'How do I check availability?',
-    answer: `Call ${CLINIC_INFO.contact.phone} to discuss your roof restoration and check availability.`,
-    relatedLink: { href: '/contato/', label: 'Contact our team →' },
+    answer: `Call ${CLINIC_INFO.contact.phone} to discuss your roofing work and check availability.`,
+    relatedLink: { href: '/contact/', label: 'Contact our team →' },
   },
 ];
 
@@ -75,3 +75,4 @@ export default function HomeFaqs() {
     </section>
   );
 }
+

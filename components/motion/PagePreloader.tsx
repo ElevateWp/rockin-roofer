@@ -148,9 +148,9 @@ export default function PagePreloader() {
   return (
     <div
       ref={containerRef}
-      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#171717] text-paper overflow-hidden select-none"
+      className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#351017] text-paper overflow-hidden select-none"
       style={{ willChange: 'clip-path, opacity' }}
-      aria-label="Loading Priceys Roof Painting"
+      aria-label="Loading The Rockin’ Roofer LTD"
     >
       {/* One charcoal cover retracts along a stepped diagonal, keeping the reveal continuous. */}
 
@@ -161,11 +161,11 @@ export default function PagePreloader() {
         {/* Animated 3D Logo */}
         <div
           ref={logoRef}
-          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-paper rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#555555]/40"
+          className="relative w-20 h-20 sm:w-24 sm:h-24 bg-paper rounded-2xl shadow-2xl p-2.5 flex items-center justify-center mb-6 border border-[#9B2B3B]/40"
         >
           <Image
-            src="/doms-painting-logo.png"
-            alt="Priceys Roof Painting"
+            src="/rockin-roofers-logo.png"
+            alt="The Rockin’ Roofer LTD"
             width={80}
             height={80}
             priority
@@ -178,7 +178,7 @@ export default function PagePreloader() {
           ref={titleRef}
           className="font-display text-22 sm:text-30 md:text-36 font-medium text-paper uppercase tracking-[0.08em] leading-tight mb-3 text-shadow-sm"
         >
-          Priceys Roof Painting
+          The Rockin’ Roofer LTD
         </h1>
 
         {/* Delicate Golden-Lime Divider Line */}
@@ -192,9 +192,10 @@ export default function PagePreloader() {
           ref={subtitleRef}
           className="font-body text-12 sm:text-13 text-paper/85 uppercase tracking-[0.15em]"
         >
-           ROOF RESTORATION & PAINTING • 
+           ROOF REPAIRS & REPLACEMENTS • 
         </p>
       </div>
     </div>
   );
 }
+

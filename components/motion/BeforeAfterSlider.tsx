@@ -15,8 +15,8 @@ interface BeforeAfterSliderProps {
 export default function BeforeAfterSlider({
   beforeImage,
   afterImage,
-  beforeLabel = 'Antes do reparo',
-  afterLabel = 'Depois do reparo',
+  beforeLabel = 'Before repair',
+  afterLabel = 'After repair',
   clinicalNote,
   className = '',
 }: BeforeAfterSliderProps) {
@@ -108,7 +108,7 @@ export default function BeforeAfterSlider({
         }}
         tabIndex={0}
         role="slider"
-        aria-label="Comparação de imagens ilustrativas de services residenciais"
+        aria-label="Comparison of residential roofing work"
         aria-valuenow={Math.round(sliderPos)}
         aria-valuemin={0}
         aria-valuemax={100}
@@ -169,3 +169,4 @@ export default function BeforeAfterSlider({
     </div>
   );
 }
+

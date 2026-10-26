@@ -10,7 +10,7 @@ const REASONS = [
   },
   {
     title: 'Agreeing on the job scope',
-    description: 'Alinhe o escopo e os prazos do service para seu imóvel.',
+    description: 'Agree the work scope and timing before the project begins.',
   },
   {
     title: 'Planning the next steps',
@@ -18,7 +18,7 @@ const REASONS = [
   },
   {
     title: 'Roofing services',
-    description: 'Our services include roof restoration, painting, tile repairs, repointing, gutter cleaning and solar panel cleaning.',
+    description: 'Our services include roof repairs and replacements, tile repairs, lead flashing, re-pointing, fascia, soffit and guttering.',
   },
 ];
 
@@ -66,36 +66,36 @@ export default function HomeWhyUs() {
                   <MediaParallax speed={0.06} className="w-full h-full">
                     <Image
                     src="/images/roofing-hero.png"
-                    alt="Roof restoration"
+                    alt="Roof repairs"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
-                  <div className="absolute bottom-3 left-3 bg-[#171717]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
-                    Roof restoration
+                  <div className="absolute bottom-3 left-3 bg-[#292326]/90 backdrop-blur-sm text-paper font-body text-12 px-3 py-1 font-medium">
+                    Roof repairs
                   </div>
                 </div>
                 {/* Additional home repairs imagery */}
                 <div className="col-span-2 sm:col-span-1 relative aspect-square bg-mist overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/roof-with-tiles.png"
-                    alt="Roof restoration work"
+                    alt="Roof repairs work"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover"
                   />
                 </div>
-                {/* Project residencial detail */}
-                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F5F5F5] overflow-hidden border border-mist shadow-sm">
+                {/* Project details */}
+                <div className="col-span-2 sm:col-span-1 relative aspect-square bg-[#F8F5F5] overflow-hidden border border-mist shadow-sm">
                   <Image
                     src="/images/roof-saffron-walden-1024x768-1.jpg"
-                    alt="Roof repairs and painting"
+                    alt="Roof repairs and replacement"
                     fill
                     sizes="(max-width: 640px) 100vw, 25vw"
                     className="object-cover object-top"
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[#171717]/80 text-paper font-body text-12 px-3 py-2 text-center">
+                  <div className="absolute bottom-0 left-0 right-0 bg-[#292326]/80 text-paper font-body text-12 px-3 py-2 text-center">
                      Roofing services
                   </div>
                 </div>
@@ -107,3 +107,5 @@ export default function HomeWhyUs() {
     </section>
   );
 }
+
+

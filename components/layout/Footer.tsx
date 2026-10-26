@@ -13,8 +13,8 @@ export default function Footer() {
             <div className="flex items-center gap-4 mb-5">
               <div className="w-40 h-14 sm:w-48 sm:h-[70px] bg-paper rounded-xl p-2 flex items-center justify-center flex-shrink-0 shadow-md">
                 <Image
-                  src="/doms-painting-logo.png"
-                  alt="Priceys Roof Painting logo"
+                  src="/rockin-roofers-logo.png"
+                  alt="The Rockin’ Roofer LTD logo"
                   width={220}
                   height={80}
                   className="object-contain w-full h-full"
@@ -22,18 +22,18 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-display text-24 md:text-30 font-medium leading-tight">
-                  Priceys Roof Painting
+                  The Rockin’ Roofer LTD
                 </span>
                 <span className="font-body text-13 text-paper/70 font-medium">
-                  Roof restoration · Roof painting · Roof repairs
+                  Roof repairs · Roof replacement · Roofline work
                 </span>
               </div>
             </div>
             <p className="font-body text-16 text-paper/80 leading-relaxed max-w-xl">
-              Roof restoration and painting in Nelson Bay and surrounding areas.
+              Roofing work in Belvedere. Contact us to discuss your property.
             </p>
             <div className="mt-6 flex flex-wrap gap-4 text-13 text-paper/60">
-              <a href="tel:+61434242175" className="hover:text-paper">+61 434 242 175</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">Priceys Roof Painting</a>}
+              <a href="tel:+447570354661" className="hover:text-paper">+44 7570 354661</a>{CLINIC_INFO.contact.website && <a href={CLINIC_INFO.contact.website} target="_blank" rel="noopener noreferrer" className="hover:text-paper">The Rockin’ Roofer LTD</a>}
               {CLINIC_INFO.contact.email && <a href={`mailto:${CLINIC_INFO.contact.email}`} className="hover:text-paper">{CLINIC_INFO.contact.email}</a>}
             </div>
           </div>
@@ -44,7 +44,7 @@ export default function Footer() {
                 Roofing services
               </span>
               <p className="font-body text-15 text-paper/90 mb-4">
-                Planning roof work? Call Priceys Roof Painting.
+                Planning roof work? Call The Rockin’ Roofer LTD.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <a
@@ -59,7 +59,7 @@ export default function Footer() {
                   href="/quote/"
                   className="font-body text-13 text-paper/80 underline underline-offset-4 hover:text-paper"
                 >
-                  Request a quote
+                  Get a quote
                 </Link>
               </div>
             </div>
@@ -94,14 +94,14 @@ export default function Footer() {
             </span>
             <ul className="space-y-2.5 font-body text-15">
               <li>
-                <Link href="/equipe/" className="text-paper/80 hover:text-lime transition-colors">
-                  Meet Harley at Priceys Roof Painting
+                <Link href="/team/" className="text-paper/80 hover:text-lime transition-colors">
+                  Meet Ben at The Rockin’ Roofer LTD
                 </Link>
               </li>
               {DENTISTS.map((d) => (
                 <li key={d.slug}>
                   <Link
-                    href={`/equipe/${d.slug}/`}
+                    href={`/team/${d.slug}/`}
                     className="text-paper/80 hover:text-lime transition-colors"
                   >
                     {d.name}
@@ -128,23 +128,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/dicas/" className="text-paper/80 hover:text-lime transition-colors">
-                  Painting advice
+                <Link href="/blog/" className="text-paper/80 hover:text-lime transition-colors">
+                  Roofing advice
                 </Link>
               </li>
               <li>
                 <Link href="/quote/" className="text-paper/80 hover:text-lime transition-colors">
-                  Request a quote
+                  Get a quote
                 </Link>
               </li>
               <li>
-                <Link href="/contato/" className="text-paper/80 hover:text-lime transition-colors">
+                <Link href="/contact/" className="text-paper/80 hover:text-lime transition-colors">
                   Contact
                 </Link>
               </li>
               <li>
                 <Link href="/quote/" className="text-paper/80 hover:text-lime transition-colors">
-                  Request a quote
+                  Get a quote
                 </Link>
               </li>
             </ul>
@@ -183,10 +183,12 @@ export default function Footer() {
             © {new Date().getFullYear()} {CLINIC_INFO.legalName}. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
-            <a href="/" className="hover:text-paper">Priceys Roof Painting</a>
+            <a href="/" className="hover:text-paper">The Rockin’ Roofer LTD</a>
           </div>
         </div>
       </div>
     </footer>
   );
 }
+
+

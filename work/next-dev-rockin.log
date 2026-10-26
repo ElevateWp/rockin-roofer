@@ -1,0 +1,41 @@
+
+> nova-dental@1.0.0 dev
+> next dev --hostname 127.0.0.1 --port 3002
+
+  ▲ Next.js 14.2.15
+  - Local:        http://127.0.0.1:3002
+  - Network:      http://127.0.0.1:3002
+
+ ✓ Starting...
+ ✓ Ready in 5.1s
+ ○ Compiling / ...
+ ✓ Compiled / in 9s (664 modules)
+ HEAD / 200 in 11185ms
+ ✓ Compiled in 2.1s (307 modules)
+ ✓ Compiled in 149ms (293 modules)
+ HEAD / 200 in 92ms
+ GET / 200 in 154ms
+ GET / 200 in 279ms
+ GET / 200 in 221ms
+ ✓ Compiled in 2.2s (664 modules)
+ ✓ Compiled in 1452ms (664 modules)
+ GET / 200 in 364ms
+ ✓ Compiled in 4s (664 modules)
+ ✓ Compiled in 1478ms (664 modules)
+ ✓ Compiled in 1776ms (664 modules)
+ ✓ Compiled in 598ms (307 modules)
+ GET / 200 in 2102ms
+ GET / 200 in 170ms
+ GET / 200 in 288ms
+ ○ Compiling /[slug] ...
+ ✓ Compiled /[slug] in 2.1s (659 modules)
+ ○ Compiling /about ...
+ ✓ Compiled /about in 750ms (673 modules)
+ ○ Compiling /blog ...
+ ✓ Compiled /blog in 711ms (678 modules)
+ ○ Compiling /blog/[slug] ...
+ ✓ Compiled /blog/[slug] in 810ms (688 modules)
+ ○ Compiling /quote ...
+ ✓ Compiled /quote in 1652ms (696 modules)
+ GET /quote/ 200 in 2070ms
+ GET / 200 in 191ms

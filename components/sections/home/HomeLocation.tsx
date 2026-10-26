@@ -30,7 +30,7 @@ export default function HomeLocation() {
                   {CLINIC_INFO.name}
                 </h3>
                 <p className="font-body text-15 text-forest-ink/90 leading-relaxed mb-2">
-                  {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.city} {CLINIC_INFO.primaryLocation.postalCode}
+                  {CLINIC_INFO.primaryLocation.street}, {CLINIC_INFO.primaryLocation.city} {CLINIC_INFO.primaryLocation.postalCode}, United Kingdom
                 </p>
                 <p className="font-body text-15 md:text-17 text-forest-ink/90 leading-relaxed mb-4">
                   Get in touch to discuss your project and confirm availability.
@@ -42,7 +42,7 @@ export default function HomeLocation() {
                 )}
                 <div className="flex flex-wrap gap-2 mt-4">
                   {CLINIC_INFO.identityHighlights.map((highlight) => (
-                    <span key={highlight} className="bg-[#F5F5F5] border border-[#DCDCDC] px-3 py-1.5 text-12 text-[#171717]">
+                    <span key={highlight} className="bg-[#F8F5F5] border border-[#E5DADD] px-3 py-1.5 text-12 text-[#292326]">
                       {highlight}
                     </span>
                   ))}
@@ -75,26 +75,26 @@ export default function HomeLocation() {
                 >
                   Call now
                 </Button>
-                  <Button href="/contato/" variant="forest" size="md">
+                  <Button href="/contact/" variant="forest" size="md">
                   Contact us
                 </Button>
               </div>
             </AnimateOnScroll>
           </div>
 
-          {/* Columns 7–12: Residential reference image and contact details */}
+          {/* Columns 7–12: residential reference image and contact details */}
           <div className="lg:col-span-6 flex flex-col space-y-6">
             <AnimateOnScroll animation="fade-left" duration={0.85}>
               <div className="relative aspect-[16/10] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roof-saffron-walden-1024x768-1.jpg"
-                  alt="Roof painting work"
+                  alt="roofing work"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover"
                 />
                 <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                  Priceys Roof Painting
+                  The Rockin’ Roofer LTD
                 </div>
               </div>
             </AnimateOnScroll>
@@ -106,10 +106,10 @@ export default function HomeLocation() {
                     Roofing services
                   </span>
                   <h3 className="font-display text-21 text-forest-ink mb-2">
-                    Roof restoration, repairs and cleaning
+                    Roof repairs, replacements and roofline work
                   </h3>
                   <p className="font-body text-13 text-forest-ink/80 mb-3 leading-relaxed">
-                    Call to discuss the painting work you need.
+                    Call to discuss the roof work you need.
                   </p>
                   <div className="flex items-center gap-2 text-13 font-body text-forest">
                     <span className="w-2 h-2 rounded-full bg-forest animate-pulse" />
@@ -122,7 +122,7 @@ export default function HomeLocation() {
                     {CLINIC_INFO.contact.phone}
                   </span>
                   <Button
-                    href="/contato/"
+                    href="/contact/"
                     variant="forest"
                     size="sm"
                   >
@@ -137,3 +137,7 @@ export default function HomeLocation() {
     </section>
   );
 }
+
+
+
+

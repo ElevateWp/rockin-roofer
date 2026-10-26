@@ -28,9 +28,9 @@ export async function generateMetadata({ params }: BlogPostProps): Promise<Metad
   if (!post) return {};
 
   return createMetadata({
-    title: `${post.title} | Painting advice`,
+    title: `${post.title} | Roofing advice`,
     description: post.excerpt,
-    pathname: `/dicas/${post.slug}/`,
+    pathname: `/blog/${post.slug}/`,
     image: post.leadImage,
   });
 }
@@ -48,7 +48,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     title: p.title,
     subtitle: `${p.category} • ${p.readTime}`,
     description: p.excerpt,
-    href: `/dicas/${p.slug}/`,
+    href: `/blog/${p.slug}/`,
     theme: idx % 2 === 1 ? 'forest' : 'paper',
   }));
 
@@ -62,7 +62,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     dateModified: post.lastUpdated,
     author: {
       '@type': 'Person',
-      name: author?.name || 'Equipe Priceys Roof Painting',
+      name: author?.name || 'The Rockin Roofer LTD team',
     },
     publisher: {
       '@type': 'Organization',
@@ -86,9 +86,9 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Painting advice', path: '/dicas/' },
-              { name: post.category, path: '/dicas/' },
-              { name: post.title, path: `/dicas/${post.slug}/` },
+              { name: 'Roofing advice', path: '/blog/' },
+              { name: post.category, path: '/blog/' },
+              { name: post.title, path: `/blog/${post.slug}/` },
             ]}
           />
 
@@ -99,9 +99,9 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                 <span>•</span>
                 <span className="tabular-nums">{post.readTime}</span>
                 <span>•</span>
-                <span>Publicado em: {post.publishDate}</span>
+                <span>Published: {post.publishDate}</span>
                 <span>•</span>
-                <span>Atualizado em: {post.lastUpdated}</span>
+                <span>Updated: {post.lastUpdated}</span>
               </div>
 
               <WordRevealH1 text={post.title} className="mb-6" />
@@ -122,7 +122,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
                   </div>
                   <div>
                     <Link
-                      href={`/equipe/${author.slug}/`}
+                      href={`/team/${author.slug}/`}
                       className="font-display text-17 text-forest-ink hover:text-forest font-medium block"
                     >
                       {author.name}
@@ -223,7 +223,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Painting advice
+                Roofing advice
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
                 Contact our team about your project
@@ -232,7 +232,7 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <Button href="/quote/" variant="lime" size="lg">
-              Request a quote
+              Get a quote
             </Button>
           </AnimateOnScroll>
         </div>
@@ -240,3 +240,4 @@ export default function SingleBlogPage({ params }: BlogPostProps) {
     </div>
   );
 }
+

@@ -3,10 +3,10 @@ import Link from 'next/link';
 import { TiltedGridHero } from '@/components/ui/tilted-grid-hero';
 
 const TEAM_IMAGES = [
-  { src: '/images/roof-with-tiles.png', alt: 'Painter at work inside a home' },
-  { src: '/images/roof-saffron-walden-1024x768-1.jpg', alt: 'Roof painting work' },
-  { src: '/images/roofb3-1.jpg', alt: 'Painter applying a finish coat to a wall' },
-  { src: '/images/roofing-hero.png', alt: 'Painter working on a residential roof' },
+  { src: '/images/roof-with-tiles.png', alt: 'Roof repair work' },
+  { src: '/images/roof-saffron-walden-1024x768-1.jpg', alt: 'Roof repair work' },
+  { src: '/images/roofb3-1.jpg', alt: 'Roofer working on a residential property' },
+  { src: '/images/roofing-hero.png', alt: 'Roofing work at a residential property' },
 ];
 
 export default function HomeDentists() {
@@ -30,15 +30,15 @@ export default function HomeDentists() {
               Our team
             </span>
             <h2 className="mt-3 max-w-3xl font-display text-26 text-balance text-forest-ink md:text-41">
-              Meet Harley at Priceys Roof Painting
+              Meet Ben at The Rockin’ Roofer LTD
             </h2>
             <div className="mt-auto flex flex-col items-center pb-1">
               <p className="max-w-lg text-balance font-body text-15 leading-relaxed text-forest-ink/70">
-                Priceys Roof Painting is a local Nelson Bay team for roof restoration and roof painting, with tidy work and attention to detail.
+                Ben and his dad carry out roof repairs, replacements, water ingress investigations and roofline work around Belvedere.
               </p>
               <Link
-                href="/equipe/"
-                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#222222] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#222222]/20 transition-transform hover:-translate-y-0.5"
+                href="/team/"
+                className="pointer-events-auto mt-6 inline-flex rounded-full bg-[#791D2B] px-7 py-3 font-body text-15 font-semibold text-white shadow-lg shadow-[#791D2B]/20 transition-transform hover:-translate-y-0.5"
               >
                 Meet the team <span className="ml-2" aria-hidden="true">→</span>
               </Link>
@@ -49,6 +49,10 @@ export default function HomeDentists() {
     </section>
   );
 }
+
+
+
+
 
 
 

@@ -17,9 +17,9 @@ import { SERVICES } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'Roofing services in Nelson Bay, New South Wales',
+  title: 'Roofing services in Belvedere, United Kingdom',
   description:
-    'Priceys Roof Painting provides roof restoration, painting, repairs and cleaning. Call +61 434 242 175.',
+    'The Rockin’ Roofer LTD provides roof repairs, replacements, tile repairs and roofline services in Belvedere. Call +44 7570 354661.',
   pathname: '/',
 });
 
@@ -55,7 +55,7 @@ export default function HomePage() {
         <TextureBackground variant="divider" className="opacity-30" />
       </div>
 
-      {/* SECTION 4: Why Choose Priceys Roof Painting */}
+      {/* SECTION 4: Why Choose The Rockin’ Roofer LTD */}
       <HomeWhyUs />
 
       {/* SECTION 5: Meet Our team */}
@@ -76,8 +76,9 @@ export default function HomePage() {
       {/* SECTION 11: Service area and Opening hours */}
       <HomeLocation />
 
-      {/* SECTION 12: Request a quote */}
+      {/* SECTION 12: Get a quote */}
       <HomeFinalCTA />
     </div>
   );
 }
+

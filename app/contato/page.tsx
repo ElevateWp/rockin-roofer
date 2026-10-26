@@ -11,8 +11,8 @@ import { createMetadata } from '@/lib/seo';
 export const metadata: Metadata = createMetadata({
   title: 'Contact and service area',
   description:
-    'Call Priceys Roof Painting on +61 434 242 175 to discuss roof restoration, roof painting or roof repairs.',
-  pathname: '/contato/',
+    'Call The Rockin’ Roofer LTD on +44 7570 354661 to discuss roof repairs, roof replacements or roofline work.',
+  pathname: '/contact/',
 });
 
 export default function ContactPage() {
@@ -23,7 +23,7 @@ export default function ContactPage() {
         <TextureBackground variant="contact" className="opacity-30" />
 
         <div className="relative z-10 max-w-site mx-auto px-6 md:px-12">
-          <Breadcrumbs items={[{ name: 'Contact', path: '/contato/' }]} />
+          <Breadcrumbs items={[{ name: 'Contact', path: '/contact/' }]} />
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mt-8">
             <div className="lg:col-span-8">
@@ -31,9 +31,9 @@ export default function ContactPage() {
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 uppercase tracking-wider font-medium">
                   Contact and quotes
                 </span>
-                <WordRevealH1 text="Contact Priceys Roof Painting." />
+                <WordRevealH1 text="Contact The Rockin’ Roofer LTD." />
                 <p className="font-body text-17 md:text-21 text-forest-ink/90 leading-relaxed mt-6 max-w-2xl">
-                  Call us to discuss roof restoration, painting, repairs and cleaning.
+                  Call Ben to discuss roof repairs, replacements, water ingress or roofline work.
                 </p>
               </AnimateOnScroll>
             </div>
@@ -41,7 +41,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* SECTION 2-7: Contact Methods Directory, Horários, Address & Map */}
+      {/* SECTION 2-7: Contact Methods Directory, Opening hours, Address & Map */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -59,7 +59,7 @@ export default function ContactPage() {
                     href="/quote/"
                     className="mb-5 inline-flex min-h-11 items-center bg-brand px-5 font-body text-15 font-semibold text-white transition-colors hover:bg-brand-hover"
                   >
-                    Request a quote
+                    Get a quote
                   </a>
 
                   <div className="divide-y divide-mist border-t border-b border-mist">
@@ -76,7 +76,7 @@ export default function ContactPage() {
                           {CLINIC_INFO.contact.phone}
                         </a>
                       </div>
-                      <span className="font-body text-13 text-forest font-medium">Painting enquiries</span>
+                      <span className="font-body text-13 text-forest font-medium">Roofing enquiries</span>
                     </div>
 
                     {/* Phone */}
@@ -145,7 +145,7 @@ export default function ContactPage() {
                       {CLINIC_INFO.name}
                     </h3>
                     <p className="font-body text-13 text-paper/80 leading-relaxed">
-                    Call to check availability for your roof restoration.
+                    Call to discuss your roofing job and arrange an inspection.
                     </p>
                   </div>
 
@@ -179,7 +179,7 @@ export default function ContactPage() {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Request a quote
+                Get a quote
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
                 Ready to request a quote?
@@ -188,7 +188,7 @@ export default function ContactPage() {
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <Button href="/quote/" variant="lime" size="lg">
-              Request a quote Online
+              Get a quote Online
             </Button>
           </AnimateOnScroll>
         </div>
@@ -196,3 +196,5 @@ export default function ContactPage() {
     </div>
   );
 }
+
+

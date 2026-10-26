@@ -14,17 +14,17 @@ import { CLINIC_INFO, DENTISTS } from '@/lib/clinic-data';
 import { createMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createMetadata({
-  title: 'About Priceys Roof Painting',
+  title: 'About The Rockin’ Roofer LTD',
   description:
-    'Meet Priceys Roof Painting and learn about our roofing services.',
+    'Meet The Rockin’ Roofer LTD and learn about our roofing services.',
   pathname: '/about/',
 });
 
 const TIMELINE = [
   {
-    year: 'Nelson Bay and surrounding areas',
+    year: 'Belvedere and surrounding areas',
     title: 'Roofing services',
-    description: 'Priceys Roof Painting provides roof restoration and roof painting in Nelson Bay. Contact us to discuss your project.',
+    description: 'The Rockin’ Roofer LTD provides roof repairs, replacements, tile repairs and roofline work in Belvedere. Contact us to discuss your project.',
   },
 ];
 
@@ -59,11 +59,11 @@ export default function AboutPage() {
             <div className="lg:col-span-8">
               <AnimateOnScroll animation="fade-right" duration={0.8}>
                 <span className="font-body text-13 text-forest-ink/60 block mb-3 font-medium uppercase tracking-wider">
-                  About Priceys Roof Painting
+                  About The Rockin’ Roofer LTD
                 </span>
-                <WordRevealH1 text="Roof restoration and painting in Nelson Bay, NSW." />
+                <WordRevealH1 text="Roof repairs and replacements in Belvedere, UK." />
                 <div className="mt-8">
-                  <ScrubbedParagraph text="Priceys Roof Painting provides roof restoration and roof painting in Nelson Bay. Customers highlight professional, tidy work and attention to detail." />
+                  <ScrubbedParagraph text="The Rockin’ Roofer LTD carries out roof repairs and replacements, leak investigations, re-pointing and fascia, soffit and gutter work. Customers highlight clear communication and professional, helpful service." />
                 </div>
               </AnimateOnScroll>
             </div>
@@ -73,7 +73,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-paper border border-mist space-y-3 font-body text-13 text-forest-ink/80 shadow-sm">
                   <div className="flex justify-between border-b border-mist pb-2">
                     <span>Phone</span>
-                    <span className="font-medium text-forest">+61 434 242 175</span>
+                    <span className="font-medium text-forest">+44 7570 354661</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -161,7 +161,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* SECTION 4: Equipe Priceys Roof Painting */}
+      {/* SECTION 4: Equipe The Rockin’ Roofer LTD */}
       <section className="py-20 md:py-32 border-b border-mist">
         <div className="max-w-site mx-auto px-6 md:px-12">
           <AnimateOnScroll animation="fade-up" duration={0.8}>
@@ -171,11 +171,11 @@ export default function AboutPage() {
                   Our team
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                  Meet Harley at Priceys Roof Painting
+                  Meet Ben at The Rockin’ Roofer LTD
                 </h2>
               </div>
               <Link
-                href="/equipe/"
+                href="/team/"
                 className="font-body text-15 text-forest font-medium hover:underline underline-offset-4"
               >
                 View Team Details →
@@ -201,19 +201,19 @@ export default function AboutPage() {
                   Our services
                 </span>
                 <h2 className="font-display text-33 md:text-41 text-forest-ink mb-6">
-                  Services para cuidar e renovar seu imóvel
+                  Roofing services to protect and renew your home
                 </h2>
                 <p className="font-body text-15 md:text-17 text-forest-ink/80 leading-relaxed mb-6">
-                  Our team discusses roof preparation, repairs, repointing and the finish you want for your property.
+                  Our team discusses roof repairs, replacements, re-pointing and roofline work for your property.
                 </p>
                 <div className="space-y-2 font-body text-13 text-forest-ink/70">
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                    <span>O escopo e os detalhes do project são alinhados antes do início.</span>
+                    <span>We agree on the project scope and details before work begins.</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="w-1.5 h-1.5 rounded-full bg-forest" />
-                    <span>Acabamento cuidadoso e atenção aos detalhes</span>
+                    <span>Careful workmanship and attention to detail</span>
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -225,14 +225,14 @@ export default function AboutPage() {
                   <MediaParallax speed={0.08} className="w-full h-full">
                     <Image
                       src="/images/roofing-hero.png"
-                      alt="Roof restoration in progress"
+                      alt="Roof repairs in progress"
                       fill
                       sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover"
                     />
                   </MediaParallax>
                   <div className="absolute bottom-3 left-3 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-3 py-1 font-medium border border-mist/50">
-                    Roof restoration
+                    Roof repairs
                   </div>
                 </div>
               </AnimateOnScroll>
@@ -247,10 +247,10 @@ export default function AboutPage() {
           <AnimateOnScroll animation="fade-up" duration={0.8}>
             <div className="mb-12">
               <span className="font-body text-13 text-forest-ink/60 block mb-2 font-medium uppercase tracking-wider">
-                Roof restoration projects
+                Roof repairs projects
               </span>
               <h2 className="font-display text-33 md:text-41 text-forest-ink">
-                Roof restoration projects
+                Roof repairs projects
               </h2>
             </div>
           </AnimateOnScroll>
@@ -260,13 +260,13 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roof-with-tiles.png"
-                  alt="Roof restoration work"
+                  alt="Roof repairs work"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Referência de service residencial
+                  Residential roofing project reference
                 </div>
               </div>
             </AnimateOnScroll>
@@ -274,7 +274,7 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roof-saffron-walden-1024x768-1.jpg"
-                  alt="Painter applying a fresh coat of paint"
+                  alt="Roofer carrying out roof work"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
@@ -288,13 +288,13 @@ export default function AboutPage() {
               <div className="relative aspect-[4/3] bg-mist overflow-hidden border border-mist shadow-sm">
                 <Image
                   src="/images/roofb3-1.jpg"
-                  alt="Roof restoration work"
+                  alt="Roof repairs work"
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover"
                 />
                 <div className="absolute bottom-2 left-2 bg-paper/95 backdrop-blur-sm text-forest-ink font-body text-13 px-2.5 py-0.5 border border-mist/50">
-                  Reparo residencial
+                  Residential roof repair
                 </div>
               </div>
             </AnimateOnScroll>
@@ -308,7 +308,7 @@ export default function AboutPage() {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Request a quote
+                Get a quote
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
                 Tell us what you need done
@@ -321,9 +321,9 @@ export default function AboutPage() {
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <div className="flex flex-wrap items-center gap-4">
               <Button href="/quote/" variant="lime" size="lg">
-                Request a quote
+                Get a quote
               </Button>
-              <Button href="/contato/" variant="ghost-light" size="lg">
+              <Button href="/contact/" variant="ghost-light" size="lg">
                 Contact us
               </Button>
             </div>
@@ -333,3 +333,7 @@ export default function AboutPage() {
     </div>
   );
 }
+
+
+
+

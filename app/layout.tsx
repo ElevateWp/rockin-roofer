@@ -10,18 +10,10 @@ import { BASE_URL, generateLocalBusinessSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: {
-    default: 'Priceys Roof Painting | Roofing services in Nelson Bay',
-    template: '%s',
-  },
-  description:
-    'Roof restoration, roof painting and outdoor services in Nelson Bay. Call Priceys Roof Painting on +61 434 242 175.',
-  keywords: [
-    'Priceys Roof Painting',
-    'roofing services Nelson Bay and surrounding areas',
-    'roof restoration',
-  ],
-  authors: [{ name: 'Priceys Roof Painting' }],
+  title: { default: "The Rockin’ Roofer LTD | Roofing services in Belvedere", template: '%s' },
+  description: "Roof repairs, roof replacement and roofline services in Belvedere. Call The Rockin’ Roofer LTD on +44 7570 354661.",
+  keywords: ["The Rockin’ Roofer LTD", 'roofing services Belvedere and surrounding areas', 'roof repairs'],
+  authors: [{ name: "The Rockin’ Roofer LTD" }],
   icons: {
     icon: [{ url: '/favicon.png', type: 'image/png' }],
     shortcut: [{ url: '/favicon.png', type: 'image/png' }],
@@ -29,33 +21,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-AU" className="scroll-smooth">
+    <html lang="en-GB" className="scroll-smooth">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
       </head>
-      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#D9D9D9] selection:text-[#171717]">
+      <body className="bg-paper text-forest-ink min-h-screen flex flex-col selection:bg-[#E8DADD] selection:text-[#292326]">
         <PagePreloader />
         <SiteTextReveal />
         <JsonLd data={generateLocalBusinessSchema()} />
-        <a href="#main-content" className="skip-link">
-          Skip to main content
-        </a>
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <LenisProvider>
           <Navbar />
-          <main id="main-content" className="flex-grow pt-[88px] sm:pt-[100px] md:pt-[112px]">
-            {children}
-          </main>
+          <main id="main-content" className="flex-grow pt-[88px] sm:pt-[100px] md:pt-[112px]">{children}</main>
           <Footer />
         </LenisProvider>
       </body>

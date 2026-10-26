@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: DentistProfileProps): Promise
   return createMetadata({
     title: `${dentist.name} | ${dentist.title}`,
     description: dentist.bio,
-    pathname: `/equipe/${dentist.slug}/`,
+    pathname: `/team/${dentist.slug}/`,
     image: dentist.image,
   });
 }
@@ -67,8 +67,8 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
         <div className="max-w-site mx-auto px-6 md:px-12">
           <Breadcrumbs
             items={[
-              { name: 'Priceys Roof Painting team', path: '/equipe/' },
-              { name: dentist.name, path: `/equipe/${dentist.slug}/` },
+              { name: 'The Rockin’ Roofer LTD team', path: '/team/' },
+              { name: dentist.name, path: `/team/${dentist.slug}/` },
             ]}
           />
 
@@ -117,9 +117,9 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
 
                 <div className="flex flex-wrap items-center gap-4">
                   <Button href="/quote/" variant="forest" size="lg">
-                    Request a quote from {dentist.name}
+                    Get a quote from {dentist.name}
                   </Button>
-                  <Button href="/equipe/" variant="ghost" size="lg">
+                  <Button href="/team/" variant="ghost" size="lg">
                     Back to Our team
                   </Button>
                 </div>
@@ -152,7 +152,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
             {dentist.memberships.length > 0 && <div className="lg:col-span-6">
               <AnimateOnScroll animation="fade-up" duration={0.8} delay={0.15}>
                 <h2 className="font-display text-26 md:text-33 text-forest-ink mb-6">
-                  About Harley
+                  About Ben
                 </h2>
                 <ul className="space-y-4 font-body text-15 text-forest-ink/80">
                   {dentist.memberships.map((mem, idx) => (
@@ -215,7 +215,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
           <AnimateOnScroll animation="fade-right" duration={0.8}>
             <div>
               <span className="font-body text-13 text-lime uppercase tracking-wider block mb-2 font-medium">
-                Request a quote
+                Get a quote
               </span>
               <h2 className="font-display text-33 md:text-41 text-paper">
                 Want to request a quote for your project with {dentist.name}?
@@ -224,7 +224,7 @@ export default function SingleDentistPage({ params }: DentistProfileProps) {
           </AnimateOnScroll>
           <AnimateOnScroll animation="fade-left" duration={0.8} delay={0.2}>
             <Button href="/quote/" variant="lime" size="lg">
-              Request a quote
+              Get a quote
             </Button>
           </AnimateOnScroll>
         </div>
